@@ -4,6 +4,7 @@
 //? API (Application Programming Interface), yazılım uygulamaları arasında iletişim kurmak için kullanılan bir arayüzdür. 
 // API'leri kullanmak, genellikle belirli bir programlama dilinde API'yi çağırmak, istekler göndermek ve yanıtları almak için belirli fonksiyonları kullanmak anlamına gelir.
 //! İstekler genellikle HTTP veya HTTPS protokolü üzerinden gönderilir.
+// 1. Fetch ve axios kullanarak isteklerimizi gönreriyoruz
 
 
 import './App.css'
