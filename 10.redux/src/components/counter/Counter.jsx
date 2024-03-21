@@ -1,21 +1,34 @@
 
-import { useState } from "react";
 import "./Counter.css";
+import { useSelector, useDispatch } from "react-redux";
+import { CLR, INC, DEC } from './../store/counterReducer';
 
 
 const Counter = () => {
-  const [counter, setCounter] = useState(0)
+
+  // Global state'in okunması
+  // const count=useSelector((state)=>state.count)
+
+
+  // !root reducer sonrası consuming
+  const count=useSelector((state)=>state.counter.count)
+
+  // useDispatch custom redux hookudur..
+ const dispatch=useDispatch()
+
   return (
     <div className="app">
       <h2 className="counter-header">Counter With Redux</h2>
-      <h1 >{counter }</h1>
+      <h1 >counter:{count} </h1>
       <div>
-        <button onClick={()=>setCounter(counter + 2)} className="counter-button positive">increase</button>
-        <button onClick={()=>setCounter(0)} className="counter-button zero">reset</button>
-        <button onClick={()=>setCounter(counter - 1)} className="counter-button negative">decrease</button>
+        <button onClick={()=>dispatch({type:INC})} className="counter-button positive">increase</button>
+
+        <button  className="counter-button zero" onClick={()=>dispatch({type:CLR})}>reset</button>
+
+        <button  className="counter-button negative" onClick={()=>dispatch({type:DEC})}>decrease</button>
       </div>
     </div>
   )
 }
 
-export default Counter
+export default Counter;
