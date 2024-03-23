@@ -1,8 +1,29 @@
-# React + Vite
+# Redux Toolkit Ornegi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## `Kurulum`
 
-Currently, two official plugins are available:
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+
+## `Kullanilan Kutuphaneler`
+
+- `@reduxjs/toolkit`
+- `react-redux`
+- `axios`
+- `react-router-dom`
+- `@mui/material-ui`
+- `@emotion/react`
+- `@emotion/styled`
+
+## `Kullanilacak API`:
+
+- https://newsapi.org/
+  (Get Key butonuna tiklanarak key alinabilir)
+
+- URL:
+  const url = `https://newsapi.org/v2/top-headlines?country=tr&apiKey=${API_KEY}`;
+
+## `Kullanilacak Araclar`
+
+- `Redux Dev Tools` : Chrome uzerinde calisan ve global state uzerinde yapilan tum degisikliklerin takip edilmesini saglayan tarayici uzantisidir. Indirmek icin [tiklayiniz.](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=chrome-ntp-icon)`
