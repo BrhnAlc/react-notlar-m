@@ -1,18 +1,13 @@
 
-
-import './App.css'
-import Hello from './Hello';
-import Login from './Login';
-import {users} from './Login'
 // export default yaptıklarımızı süslü parantez kullanmadan import ediyoruz ve dilediğimiz isimle kullanabiliyoruz.
 // Sadece export olarak kullandıklarımızı import ederken süslü parantez kullanmak zorundayız ve aynı isimle çağırmak zorundayız...
 
+import Login from "./Login"
+
 function App() {
- console.log(users);
+ 
   return (
     <div>
-    
-      <Hello/>
       <Login/>
       
     </div>

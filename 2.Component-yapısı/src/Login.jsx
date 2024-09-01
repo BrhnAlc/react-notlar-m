@@ -1,36 +1,21 @@
 
-export const users = [
-  {
-    username:"burhan",
-    password:"1"
-},
-{
-  username:"ayse",
-  password:"2"
-}
-]
-
-
-
-
 
 const Login = () => {
   return (
-    // Fragment(<> </>)
-    <> 
+    <>
     <div>
-    <p>Kullanıcı Adınız :</p>
-    <input type="text" placeholder="Kullanıcı Adınız" />
+    <p>kulanıcı adınız :</p>
+    <input type="text"  placeholder="kullanıcı adınız"/>
     </div>
-
-    <div>
-    <p>şifreniz :</p>
-    <input type="text" placeholder="Şifreniz" /> 
-    </div> <br />
-
-    <button style={{border:"1px solid "}}>Giriş Yap</button>
+      <div>
+      <p>şifreniz :</p>
+      <input type="text"  />
+      </div>
+       <hr />
+       
+       <button>giriş yapın</button>
     </>
   )
 }
 
-export default Login;
+export default Login
